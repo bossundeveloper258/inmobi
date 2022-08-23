@@ -1,0 +1,30 @@
+//Import abstracts
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//Import base
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+//Import pages
+@import "pages/home";
+@import "pages/nosotros";
+@import "pages/proyectos";
+@import "pages/recomendaciones";
+@import "pages/conversemos";
+
+//Import components
+@import "components/whatsaap";
+@import "components/separator";
+@import "components/select";
+@import "components/formulario_depas";
+@import "components/detalle_departamento";
+
+//Import layout
+@import "layout/formulario";
+@import "layout/nav";
+@import "layout/footer";
+@import "layout/proyectos";
+@import "layout/menuMobile";

@@ -1,0 +1,11 @@
+.separator{
+    height: 5px;
+    width: 100%;
+    background-color: $negro;
+}
+
+@media screen and (max-width: 1536px){
+    .separator{
+        width: calc(100% - 60px) !important;
+    }
+}

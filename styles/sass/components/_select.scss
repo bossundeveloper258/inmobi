@@ -1,0 +1,77 @@
+/* .custom-select {
+    position: relative;
+}
+  
+.custom-select select {
+    display: none; 
+}
+
+.select-selected {
+    background-color: $blanco;
+    width: 150px;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 45%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: $negro transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent $negro transparent;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.select-items div,.select-selected {
+    color: $blanco;
+    padding: 0 15px 0 15px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-selected{
+    color: $negro;
+    border-bottom: 1px solid $negro;
+}
+  
+.select-items {
+    position: absolute;
+    background-color: $negro;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(255, 255, 255, 0.2);
+} */
+
+.custom-select{
+
+    select{
+        background-color: $blanco;
+        width: 100px;
+        border-bottom: 1px solid $negro;
+        padding-bottom: 5px;
+        outline: none;
+        
+
+        option{
+            color: $blanco;
+            background-color: $negro;
+        }
+    }
+}

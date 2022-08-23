@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libre &reg; Inmobiliaria</title>
+    <link rel="shortcut icon" href="../styles/graphics/favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header About -->
+    <header class="header_nosotros flex justify-center items-center">
+        <div class="nav_logoMobile xl:hidden">
+            <div id="peru_box_mobile">
+                <label for="peru_mobile" onclick="peruFunction()">
+                        <img src="../styles/graphics/logo_libre_peru_select.png" alt="">
+                </label>
+                <input type="checkbox" name="peru_mobile" id="peru_mobile">
+            </div>
+            <div id="eeuu_box_mobile">
+                <a href="./eeuu_nosotros.html">
+                    <img src="../styles/graphics/logo_libre_eeuu.png" alt="">
+                </a>
+            </div>
+        </div>
+        <nav class="nav flex flex-row justify-between items-center container hidden xl:flex">
+            <div class="nav_logo">
+                <div id="peru_box">
+                    <label for="peru" onclick="peruFunction()">
+                            <img src="../styles/graphics/logo_libre_peru_select.png" alt="">
+                    </label>
+                    <input type="checkbox" name="peru" id="peru">
+                </div>
+                <div id="eeuu_box">
+                    <a href="./eeuu_nosotros.html">
+                        <img src="../styles/graphics/logo_libre_eeuu.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="nav_ul">
+                <ul class="flex flex-row gap-10 xxl:gap-16">
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="../pages/proyectos.html">proyectos</a></li>
+                    <li><a href="../pages/nosotros.html">nosotros</a></li>
+                    <li><a href="../pages/recomendaciones.html">recomendaciones</a></li>
+                    <li><a href="../pages/conversemos.html">conversemos</a></li>
+                </ul>
+            </div>
+            <div class="nav_redes flex flex-row gap-5 items-center">
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/libre.inmobiliaria/">
+                        insta
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/libre.inmobiliaria/">
+                        face
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/company/libreinmobiliaria/">
+                        linked
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="header_nosotros_content container">
+            <div class="flex flex-row gap-3 items-center">
+                <div>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div>
+                    <h3>Sobre Nosotros</h3>
+                </div>
+            </div>
+            <h1 class="micro">somos jóvenes, directo</h1>
+            <p>…pero con años de experiencia construyendo casas y edificios. Venimos de diferentes entornos y profesiones. Nos unió el querer emprender, el sentir esa sensación de independencia y de creer en lo que ofreces. Nuestra misión es que puedas elegir el mejor espacio para arrancar tu propia historia, con una arquitectura atenta a la materialidad, el diseño y el entorno que te rodea. Un lugar al que perteneces.</p>
+        </div>
+    </header>
+    <div class="menuMobile_icon xl:hidden">
+        <input type="checkbox" name="menuMobile_icon" id="menuMobile_icon">
+        <label for="menuMobile_icon" onclick="menuMobile()">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </div>
+    <div class="menuMobile_box">
+        <div class="ul_box">
+            <ul class="">
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="../pages/proyectos.html">proyectos</a></li>
+                <li><a href="../pages/nosotros.html">nosotros</a></li>
+                <li><a href="../pages/recomendaciones.html">recomendaciones</a></li>
+                <li><a href="../pages/conversemos.html">conversemos</a></li>
+            </ul>
+            <div class="social_box">
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/libre.inmobiliaria/">
+                        insta
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/libre.inmobiliaria/">
+                        face
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/company/libreinmobiliaria/">
+                        linked
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Header About -->
+
+    <main class="nosotrosMain container mx-auto py-20 mt-10">
+        <div class="equipo_frame flex flex-col md:flex-row gap-10 items-center mb-24">
+            <div class="w-full">
+                <img src="../styles/graphics/trabajadores/alfonso_vigil.jpg" alt="">
+            </div>
+            <div class="w-full">
+                <h3 class="micro">alfonso vigil</h3>
+                <h5>Socio – CMO Grupo Libre / CEO Libre Perú</h5>
+                <div class="equipo_frame_separator"></div>
+                <ul>
+                    <li>+ 15 años de experiencia en diversos sectores del mercado peruano y extranjero.</li>
+                    <li>Inmobiliario: Edifica (2016 – 2020).</li>
+                    <li>Inmobiliario: Besco (2013 – 2016).</li>
+                    <li>Tecnología : Planok Latam (2012 – 2013).</li>
+                    <li>Consumo masivo – retail: Nestlé (2011 – 2012).</li>
+                </ul>
+                <!-- <p>Tengo más de 15 años liderando equipos comerciales y mi principal labor en Libre es organizar de la mejor manera nuestros talentos con la finalidad de cumplir nuestros objetivos y los de nuestros clientes.</p>
+                <br> 
+                <p>Soy orgulloso papá de niñas. Me encantan todos los deportes y los practico dependiendo de la estación del año, pero mi corazón está en el fútbol. Escribo a manera de catarsis.</p> -->
+            </div>
+        </div>
+        <div class="equipo_frame flex flex-col-reverse md:flex-row gap-10 items-center mb-24">
+            <div class="w-full">
+                <h3 class="micro">carlos perales</h3>
+                <h5>Socio – CFO Grupo Libre / CEO Colabora y Libre USA</h5>
+                <div class="equipo_frame_separator"></div>
+                <ul>
+                    <li>+ 15 años de experiencia en diversos sectores del mercado peruano y extranjero.</li>
+                    <li>Inmobiliario: Desarrolladora del Pacífico (2018 – 2020).</li>
+                    <li>Consumo masivo – retail: Intercorp (2015 – 2018).</li>
+                    <li>Pesca y Corporativo: Grupo Breca (2005 – 2013).</li>
+                    <li>MBA Incae BS - NYU – Stern BS.</li>
+                    
+                </ul>
+                <!-- <p>Soy financiero. Me interesa aportar al país generando empleo, poniendo mi ADN a todo lo que hago.</p>
+                <br> 
+                <p>He recorrido Sudamérica, EEUU, Centroamérica y Europa. Hice mi MBA en New York. Me gustan las caminatas largas, el running, jugar básquet y tener a mis amigos de toda la vida cerca, siempre.</p> -->
+            </div>
+            <div class="w-full">
+                <img src="../styles/graphics/trabajadores/carlos_perales.jpg" alt="">
+            </div>
+        </div>
+        <div class="equipo_frame flex flex-col md:flex-row gap-10 items-center mb-24">
+            <div class="w-full">
+                <img src="../styles/graphics/trabajadores/mauricio_corso.jpg" alt="">
+            </div>
+            <div class="w-full">
+                <h3 class="micro">mauricio corzo</h3>
+                <h5>CREO Grupo Libre / Socio – GG Tru Arquitectos</h5>
+                <div class="equipo_frame_separator"></div>
+                <ul>
+                    <li>+ 7 años de experiencia dirigiendo las operaciones del estudio de arquitectura en Perú y México.</li>
+                    <li>Maestría en Gestión y Dirección de empresas constructoras e inmobiliarias – PUCP.</li>
+                </ul>
+                <!-- <p>Estudié administración, pero me sentía inconforme. Por eso también estudié gastronomía. Años más tarde, hice una maestría en dirección inmobiliaria.</p>
+                <br> 
+                <p>Soy papá de tres gatos. Y vuelo parapente desde hace un año: estar a 300 metros de altura despeja la mente como nada.</p> -->
+            </div>
+        </div>
+        <div class="equipo_frame flex flex-col-reverse md:flex-row gap-10 items-center">
+            <div class="w-full">
+                <h3 class="micro">jose luis zimig</h3>
+                <h5>CIO Grupo Libre / Socio – Dir. Arquitectura Tru Arquitectos</h5>
+                <div class="equipo_frame_separator"></div>
+                <ul>
+                    <li>+ 7 años de experiencia en el diseño arquitectónico e inmobiliario en Perú y México.</li>
+                    <li>Arquitecto con licencia en Perú.</li>
+                </ul>
+                <!-- <p>Soy arquitecto. Mi abuela, uno de los grandes amores de mi vida, también lo era. La acompañaba a las obras desde chico. Así nació el amor por mi carrera.</p>
+                <br> 
+                <p>Intenté ser músico profesional en su momento. Ahora, soy papá y me gusta practicar ciclismo, así como estar con mi perro.</p> -->
+            </div>
+            <div class="w-full">
+                <img src="../styles/graphics/trabajadores/jose_luis.jpg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <!-- Separator -->
+    <div class="separator container mx-auto my-10"></div>
+    <!-- end Separatos -->
+
+    <!-- Formulario -->
+    <section class="formulario container py-20 flex flex-col items-center lg:items-start lg:flex-row gap-10 lg:gap-20 mx-auto">
+        <div class="formulario_logo inline-block">
+            <img src="../styles/graphics/logo_libre_negro.png" alt="">
+        </div>
+        <div class="formulario_content w-full lg:w-6/12">
+            <h3>Conversemos</h3>
+            <form action="https://formsubmit.co/conversemos@libreinmobiliaria.com" method="post" class="flex flex-col gap-5">
+		<input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="name" id="name" placeholder="Nombre y Apellido">
+                <input type="text" name="cel" id="cel" placeholder="Celular">
+                <textarea name="message" id="message" placeholder="Consulta"></textarea>
+		<input type="hidden" name="_next" value="http://34.133.111.3/">
+		<input type="hidden" name="_captcha" value="false">
+                <button type="submit" class="flex flex-row gap-2 items-center">
+                    <div>
+                        <span>Enviar</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </button>
+            </form>
+        </div>
+        <div class="formulario_data">
+            <ul class="text-center lg:text-left">
+                <li><a class="subrayado_negro" href="https://www.instagram.com/libre.inmobiliaria/">Instagram</a></li>
+                <li><a class="subrayado_negro" href="https://www.facebook.com/libre.inmobiliaria/">Facebook</a></li>
+                <li><a class="subrayado_negro" href="https://www.facebook.com/libre.inmobiliaria/">Linkedin</a></li>
+                <li class="subrayado_negro">conversemos@libreinmobiliaria.com</li>
+                <li>Jr. Pérez Roca 203, Barranco <br> Lima - Perú</li>
+            </ul>
+        </div>
+    </section>
+    <!-- end Formulario -->
+
+    <!-- Footer -->
+    <footer class="footer flex justify-center py-3 px-3 text-center">
+        <div>
+            <p>&copy; 2022 Libre Inmobiliaria, Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Whatsaap Icon -->
+    <div class="whatsaap">
+        <a target="_blank" href="https://wa.me/51946504902">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <!-- end Whatsaap Icon -->
+
+    <!-- JS -->
+    <script src="../js/language_peru.js"></script>
+    <script src="../js/menuMobile.js"></script>
+</body>
+</html>

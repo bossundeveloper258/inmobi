@@ -1,0 +1,123 @@
+.header_recomendaciones{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./graphics/recomendacion_fondo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $blanco;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($negro, 0.7);
+        z-index: 10;
+    }
+
+    &_content{
+        z-index: 20;
+
+        span{
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 1.5px;
+        }
+
+        h1{
+            font-size: 120px;
+            text-transform: uppercase;
+            line-height: 120px;
+            letter-spacing: 20px;
+        }
+    }
+}
+
+.recomendacionesMain{
+    background-color: $negro;
+
+    .recomendacionBox{
+        position: relative;
+        width: 400px;
+
+        &_img{
+            position: relative;
+
+            img{
+                width: 100%;
+            }
+
+            &_fecha{
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $negro;
+                padding: 5px 20px;
+
+
+                span{
+                    color: $blanco;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &_title{
+            margin-top: 15px;
+            
+            h3{
+                color: $naranja-marron;
+                font-size: 40px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+
+        &_extra{
+
+            p{
+                color: $blanco;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header_recomendaciones_content{
+        span{
+            font-size: 16px;
+            letter-spacing: 1.5px;
+        }
+
+        h1{
+            font-size: 70px;
+            line-height: 70px;
+            letter-spacing: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header_recomendaciones_content{
+        span{
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        h1{
+            font-size: 50px;
+            line-height: 50px;
+            letter-spacing: 10px;
+        }
+    }
+
+    .recomendacionesMain .recomendacionBox{
+        width: 300px;
+    }
+}

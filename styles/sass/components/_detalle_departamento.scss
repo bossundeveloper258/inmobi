@@ -1,0 +1,200 @@
+.detalle_departamento{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: $blanco;
+    z-index: 100;
+    padding: 30px;
+    display: none;
+
+    &_logo{
+        position: relative;
+
+        &_x{
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            i{
+                font-size: 30px;
+                border: 3px solid $negro;
+                border-radius: 50%;
+                padding: 12px 18px 10px 18px;
+                transition: all .3s;
+
+                &:hover{
+                    background-color: $negro;
+                    color: $blanco;
+                }
+            }
+        }
+    }
+
+    &_presentacion{
+
+        h1{
+            font-size: 40px;
+            position: relative;
+            margin-bottom: 20px;
+            display: inline-block;
+
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -15px;
+                right: 0;
+                width: 200px;
+                height: 5px;
+                background-color: $negro;
+                display: none;
+            }
+        }
+
+        .tipo{
+            font-size: 100px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: $naranja_marron;
+            line-height: 120px;
+        }
+
+        .descripcion{
+            width: 330px;
+
+            &_titulo{
+                background-color: $negro;
+                color: $blanco;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 8px 0 4px 0;
+                font-size: 20px;
+            }
+
+            &_encabezado{
+                background-color: $naranja_marron;
+                color: $blanco;
+                text-align: center;
+                padding-top: 7px;
+                font-size: 18px;
+            }
+
+            &_data{
+                background-color: $white;
+                color: $negro;
+                text-align: center;
+                padding-top: 6px;
+                font-size: 18px;
+                transition: all .3s;
+            }
+        }
+    }
+
+    &_slide{
+
+        h2{
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        button{
+            background-color: $negro;
+            color: $blanco;
+            padding: 10px 20px;
+            font-size: 20px;
+            border-radius: 30px;
+            border: 2px solid $negro;
+            transition: all .3s;
+
+            &:hover{
+                background-color: $blanco;
+                box-shadow: 0 10px 10px rgba($negro, .3);
+                color: $negro;
+            }
+        }
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        width: 100%;
+        position: relative;
+    }
+
+    /* Next & previous buttons */
+    .prev, 
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $negro;
+        padding: 10px ;
+        color: $blanco;
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.3s ease;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba($blanco, .9);
+        color: $negro;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1s;
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4;
+        } 
+        to {opacity: 1;
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4;
+        } 
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+/* MMXX BARRANCO */
+.detalle_departamento_mmxx_barranco{
+
+    .detalle_departamento_presentacion .tipo{
+        color: $celeste-mmxxBarranco;
+    }
+
+    .detalle_departamento_presentacion .descripcion_encabezado{
+        background-color: $celeste-mmxxBarranco;
+    }
+}
+
+/* 28 DE JULIO */
+.detalle_departamento_28_julio{
+
+    .detalle_departamento_presentacion .tipo{
+        color: $verde-28julio;
+    }
+
+    .detalle_departamento_presentacion .descripcion_encabezado{
+        background-color: $verde-28julio;
+    }
+}

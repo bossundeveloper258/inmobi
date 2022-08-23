@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libre &reg; Inmobiliaria</title>
+    <link rel="shortcut icon" href="./styles/graphics/favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Home -->
+    <header class="header_home flex justify-center items-center">
+        <div class="nav_logoMobile xl:hidden">
+            <div id="peru_box_mobile">
+                <label for="peru_mobile" onclick="peruFunction()">
+                    <img src="./styles/graphics/logo_libre_eeuu_select.png" alt="">
+                </label>
+                <input type="checkbox" name="peru_mobile" id="peru_mobile">
+            </div>
+            <div id="eeuu_box_mobile">
+                <a href="./index.html">
+                    <img src="./styles/graphics/logo_libre_peru.png" alt="">
+                </a>
+            </div>
+        </div>
+        <nav class="nav flex flex-row justify-between items-center container hidden xl:flex">
+            <div class="nav_logo">
+                <div id="peru_box">
+                    <label for="peru" onclick="peruFunction()">
+                            <img src="./styles/graphics/logo_libre_eeuu_select.png" alt="">
+                    </label>
+                    <input type="checkbox" name="peru" id="peru">
+                </div>
+                <div id="eeuu_box">
+                    <a href="./index.html">
+                        <img src="./styles/graphics/logo_libre_peru.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="nav_ul">
+                <ul class="flex flex-row gap-16">
+                    <li><a href="./eeuu_index.html">home</a></li>
+                    <li><a href="./pages/eeuu_proyectos.html">projects</a></li>
+                    <li><a href="./pages/eeuu_nosotros.html">about us</a></li>
+                    <!-- <li><a href="./pages/eeuu_recomendaciones.html">recommendations</a></li> -->
+                    <li><a href="./pages/eeuu_conversemos.html">contact us</a></li>
+                </ul>
+            </div>
+            <div class="nav_redes flex flex-row gap-5 items-center">
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/libre.inmobiliaria/">
+                        insta
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/libre.inmobiliaria/">
+                        face
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/company/libreinmobiliaria/">
+                        linked
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="container header_home_content">
+            <h1 class="nano">we are <span class="yotta yotta_header">libre</span>, one <br> INDEPENDENT <span class="mega mega_header">REAL ESTATE COMPANY</span>  </h1>
+            <p>We create because we believe in choosing to live in a <span class="subrayado">place</span> that fills you with pride. We understand that your home is not only your house but also your building, your <span class="subrayado">neighborhood</span>, your <span class="subrayado"> community</span>. We believe in a powerful <span class="subrayado">architectural</span> approach, where the simplicity, precision and honesty of <span class="subrayado">materials</span> come together to create truly <span class="subrayado">liveable spaces</span>.</p>
+            <p class="subrayado">Welcome to Free.</p>
+        </div>
+    </header>
+    <div class="menuMobile_icon xl:hidden">
+        <input type="checkbox" name="menuMobile_icon" id="menuMobile_icon">
+        <label for="menuMobile_icon" onclick="menuMobile()">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </div>
+    <div class="menuMobile_box">
+        <div class="ul_box">
+            <ul class="">
+                <li><a href="./eeuu_index.html">home</a></li>
+                    <li><a href="./pages/eeuu_proyectos.html">projects</a></li>
+                    <li><a href="./pages/eeuu_nosotros.html">about us</a></li>
+                    <!-- <li><a href="./pages/eeuu_recomendaciones.html">recommendations</a></li> -->
+                    <li><a href="./pages/eeuu_conversemos.html">contact us</a></li>
+            </ul>
+            <div class="social_box">
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/libre.inmobiliaria/">
+                        insta
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/libre.inmobiliaria/">
+                        face
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/company/libreinmobiliaria/">
+                        linked
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Header Home -->
+
+    <!-- Proyectos Home -->
+    <section class="proyectos_home container mx-auto py-20">
+        <div class="proyectos_home_top flex flex-row justify-between">
+            <div class="proyectos_home_title flex flex-row gap-3 items-center">
+                <div>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div>
+                    <h3>Projects</h3>
+                </div>
+            </div>
+            <div class="proyectos_home_info">
+                <a href="./pages/eeuu_proyectos.html" class="flex flex-row gap-1 items-center">
+                    <div>
+                        <span>more</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-row gap-10">
+            <div class="w-full">
+                <a href="./pages/proyectos/eeuu_auburndale.html">
+                    <div class="proyectos_home_frame w-full flex flex-row">
+                        <div class="proyectos_home_frame_left proyectos_home_frame_left proyectos_home_frame_leftEEUU w-full">
+                            <!-- <img src="./styles/graphics/lima_mmxx.jpg" alt=""> -->
+                        </div>
+                        <div class="proyectos_home_frame_right w-3/5 p-5 lg:p-10 box-border flex flex-col justify-center">
+                            <h1 class="mega">auburndale</h1>
+                            <h2>florida</h3>
+                            <h3>Water Ridge Blvd, Auburndale, <br> FL 33823, Estados Unidos</h3>
+                            <h4>2022</h4>
+                        </div>
+                        <div class="proyectos_home_frame_pais">
+                            <p>florida - eeuu</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end Proyectos Home -->
+
+    <!-- Separator -->
+    <div class="separator container mx-auto"></div>
+    <!-- end Separatos -->
+
+    <!-- Nosotros Home -->
+    <section class="nosotros_home container mx-auto py-20">
+        <div class="nosotros_home_title flex flex-row gap-3 items-center">
+            <div>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+            <div>
+                <h3>About Us</h3>
+            </div>
+        </div>
+        <div class="nosotros_home_content flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20 mx-auto">
+            <div class="nosotros_home_content_left">
+                <h3 class="micro">we are young</h3>
+                <p>…but with years of experience building houses and buildings. We come from different backgrounds and professions.<br> We were united by wanting to undertake, feeling the sensation of independence and believing in what you offer. Our mission is that you can choose the best space to start your own story, with an architecture attentive to materiality, design and the environment that surrounds you. A place where you belong.</p>
+                <div class="nosotros_home_content_info">
+                    <a href="./pages/eeuu_nosotros.html">+ info</a>
+                </div>
+            </div>
+            <div class="nosotros_home_content_right">
+                <img src="./styles/graphics/trabajadores/socios_bn.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- end Nosotros Home -->
+
+    <!-- Recomendaciones Home -->
+    <!-- <section class="recomendaciones_home py-20">
+        <div class="recomendaciones_home_content container mx-auto">
+            <div class="recomendaciones_home_content1 flex flex-col sm:flex-row justify-between">
+                <div class="recomendaciones_home_title flex flex-row gap-3 items-center">
+                    <div>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                    <div>
+                        <h3>Recommendations</h3>
+                    </div>
+                </div>
+                <div class="recomendaciones_home_info">
+                    <a href="./pages/eeuu_recomendaciones.html" class="flex flex-row gap-1 items-center">
+                        <div>
+                            <span>more</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="recomendaciones_home_content2 mb-10 flex flex-col md:flex-row gap-5">
+                <div class="recomendaciones_home_content2_frame">
+                    <a href="./pages/eeuu_recomendaciones.html">
+                        <div class="recomendaciones_home_content2_frameDate">
+                            <span>January 2021</span>
+                        </div>
+                        <div class="recomendaciones_home_content2_frameTitle">
+                            <h1 class="nano">urban art</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="recomendaciones_home_content2_frame">
+                    <a href="./pages/eeuu_recomendaciones.html">
+                        <div class="recomendaciones_home_content2_frameDate">
+                            <span>May 2021</span>
+                        </div>
+                        <div class="recomendaciones_home_content2_frameTitle">
+                            <h1 class="nano">iconic chifa</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="recomendaciones_home_content2_frame">
+                    <a href="./pages/eeuu_recomendaciones.html">
+                        <div class="recomendaciones_home_content2_frameDate">
+                            <span>September 2021</span>
+                        </div>
+                        <div class="recomendaciones_home_content2_frameTitle">
+                            <h1 class="nano">modern bakeries</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="recomendaciones_home_content2_frame">
+                    <a href="./pages/eeuu_recomendaciones.html">
+                        <div class="recomendaciones_home_content2_frameDate">
+                            <span>October 2021</span>
+                        </div>
+                        <div class="recomendaciones_home_content2_frameTitle">
+                            <h1 class="nano">modern bakeries</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="recomendaciones_home_content3 text-center">
+                <p>We recommend, because nothing better <br>to walk and know what you have to a <br>step from home.</p>
+            </div>
+        </div>
+    </section> -->
+    <!-- end Recomendaciones Home -->
+
+    <!-- Separator -->
+    <div class="separator container mx-auto"></div>
+    <!-- end Separatos -->
+
+    <!-- Formulario -->
+    <section class="formulario container py-20 flex flex-col items-center lg:items-start lg:flex-row gap-10 lg:gap-20 mx-auto">
+        <div class="formulario_logo">
+            <img src="./styles/graphics/logo_libre_negro.png" alt="">
+        </div>
+        <div class="formulario_content w-full lg:w-6/12">
+            <h3>Let's talk</h3>
+            <form action="#" class="flex flex-col gap-5">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="text" name="cel" id="cel" placeholder="Cellphone">
+                <textarea name="message" id="message" placeholder="Question"></textarea>
+                <button type="submit" class="flex flex-row gap-2 items-center">
+                    <div>
+                        <span>Send</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </button>
+            </form>
+        </div>
+        <div class="formulario_data">
+            <ul class="text-center lg:text-left">
+                <li><a class="subrayado_negro" href="https://www.instagram.com/libre.inmobiliaria/">Instagram</a></li>
+                <li><a class="subrayado_negro" href="https://www.facebook.com/libre.inmobiliaria/">Facebook</a></li>
+                <li><a class="subrayado_negro" href="https://www.facebook.com/libre.inmobiliaria/">Linkedin</a></li>
+                <li class="subrayado_negro">conversemos@libreinmobiliaria.com</li>
+                <li>1420 Celebration Blvd Suite 247, <br> Celebration, FL 34747</li>
+            </ul>
+        </div>
+    </section>
+    <!-- end Formulario -->
+
+    <!-- Footer -->
+    <footer class="footer flex justify-center py-3 px-3 text-center">
+        <div>
+            <p>&copy; 2022 Libre Real State, All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Whatsaap Icon -->
+    <div class="whatsaap">
+        <a target="_blank" href="https://wa.me/51946504902">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <!-- end Whatsaap Icon -->
+
+
+    <!-- JS -->
+    <script src="./js/language_peru.js"></script>
+    <script src="./js/menuMobile.js"></script>
+</body>
+</html>

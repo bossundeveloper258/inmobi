@@ -1,0 +1,134 @@
+.header_nosotros{
+    width: 100%;
+    height: 100vh;
+    //background-image: url('./graphics/equipo_libre.jpg');
+    background-image: url('./graphics/trabajadores/socios_bn.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $blanco;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($negro, 0.8);
+        z-index: 10;
+    }
+
+    &_content{
+        z-index: 20;
+
+        h3, i{
+            font-size: 30px;
+        }
+
+        h1{
+            font-size: 120px;
+            text-transform: uppercase;
+            color: $naranja-marron;
+            margin-bottom: -25px;
+        }
+
+        p{
+            font-size: 22px;
+        }
+    }
+}
+
+.nosotrosMain{
+
+    .equipo_frame{
+
+        h3{
+            text-transform: uppercase;
+            font-size: 70px;
+            color: $naranja-marron;
+            letter-spacing: 1px;
+            line-height: 70px;
+        }
+
+        h5{
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        &_separator{
+            width: 100%;
+            height: 2px;
+            background-color: $negro;
+            margin: 30px 0;
+        }
+
+        img{
+            filter: grayscale(100%);
+            width: 100%;
+        }
+
+        ul{
+            list-style-type: square;
+            padding-left: 18px;
+
+            li{
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .socios_extra_eeuu{
+        background-color: $negro;
+        padding: 30px 0;
+
+        .socio{
+            color: $blanco;
+            
+            img{
+                height: 100px;
+                filter: grayscale(100%);
+            }
+
+            p{
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header_nosotros_content{
+
+        h3, i{
+            font-size: 20px;
+        }
+    
+        h1{
+            font-size: 80px;
+            text-transform: uppercase;
+            color: $naranja-marron;
+            margin-bottom: -25px;
+        }
+    
+        p{
+            font-size: 18px;
+        }
+    }
+
+    .nosotrosMain .socios_extra_eeuu .socio img{
+        height: 70px;
+    }
+
+    .nosotrosMain .socios_extra_eeuu .socio p{
+        font-size: 15px;
+        line-height: 10px;
+    }
+
+    .nosotrosMain .socios_extra_eeuu .socio span{
+        font-size: 14px;
+    }
+}

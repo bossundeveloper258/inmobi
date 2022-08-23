@@ -1,0 +1,14 @@
+.whatsaap{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+
+    a{
+        background-color: #25D366;
+        color: $blanco;
+        font-size: 35px;
+        padding: 15px 15px 10px 15px;
+        border-radius: 50%;
+    }
+}

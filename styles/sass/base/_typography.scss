@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'yotta';
+    src: url('./fonts/extenda/yotta.ttf');
+}
+
+@font-face {
+    font-family: 'mega';
+    src: url('./fonts/extenda/mega.ttf');
+}
+
+@font-face {
+    font-family: 'deca';
+    src: url('./fonts/extenda/deca.ttf');
+}
+
+@font-face {
+    font-family: 'micro';
+    src: url('./fonts/extenda/micro.ttf');
+}
+
+@font-face {
+    font-family: 'nano';
+    src: url('./fonts/extenda/nano.ttf');
+}
+
+@font-face {
+    font-family: 'anoregular';
+    src: url('./fonts/ano/anoregular.otf');
+}
+
+@font-face {
+    font-family: 'TT Nooks Script Bold';
+    src: url('./fonts/TT Nooks Script Bold.otf');
+}
+
+@font-face {
+    font-family: 'AnoBlack-Regular.otf';    
+    src: url('./fonts/AnoBlack-Regular.otf');
+}
+
+body{
+    font-family: 'anoregular';
+    font-size: 20px;
+}
+
+.yotta{
+    font-family: 'yotta', sans-serif;
+}
+
+.mega{
+    font-family: 'mega', sans-serif;
+}
+
+.deca{
+    font-family: 'deca', sans-serif;
+}
+
+.micro{
+    font-family: 'micro', sans-serif;
+}
+
+.nano{
+    font-family: 'nano', sans-serif;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libre &reg; Inmobiliaria</title>
+    <link rel="shortcut icon" href="../styles/graphics/favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header About -->
+    <header class="header_nosotros flex justify-center items-center">
+        <div class="nav_logoMobile xl:hidden">
+            <div id="peru_box_mobile">
+                <label for="peru_mobile" onclick="peruFunction()">
+                    <img src="../styles/graphics/logo_libre_eeuu_select.png" alt="">
+                </label>
+                <input type="checkbox" name="peru_mobile" id="peru_mobile">
+            </div>
+            <div id="eeuu_box_mobile">
+                <a href="./nosotros.html">
+                    <img src="../styles/graphics/logo_libre_peru.png" alt="">
+                </a>
+            </div>
+        </div>
+        <nav class="nav flex flex-row justify-between items-center container hidden xl:flex">
+            <div class="nav_logo">
+                <div id="peru_box">
+                    <label for="peru" onclick="peruFunction()">
+                            <img src="../styles/graphics/logo_libre_eeuu_select.png" alt="">
+                    </label>
+                    <input type="checkbox" name="peru" id="peru">
+                </div>
+                <div id="eeuu_box">
+                    <a href="./nosotros.html">
+                        <img src="../styles/graphics/logo_libre_peru.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="nav_ul">
+                <ul class="flex flex-row gap-16">
+                    <li><a href="../eeuu_index.html">home</a></li>
+                    <li><a href="./eeuu_proyectos.html">projects</a></li>
+                    <li><a href="./eeuu_nosotros.html">about us</a></li>
+                    <!-- <li><a href="./eeuu_recomendaciones.html">recommendations</a></li> -->
+                    <li><a href="./eeuu_conversemos.html">contact us</a></li>
+                </ul>
+            </div>
+            <div class="nav_redes flex flex-row gap-5 items-center">
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/libre.inmobiliaria/">
+                        insta
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/libre.inmobiliaria/">
+                        face
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/company/libreinmobiliaria/">
+                        linked
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="header_nosotros_content container">
+            <div class="flex flex-row gap-3 items-center">
+                <div>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div>
+                    <h3>About Us</h3>
+                </div>
+            </div>
+            <h1 class="micro">we are young</h1>
+            <p>…but with years of experience building houses and buildings. We come from different backgrounds and professions. We were united by wanting to undertake, feeling that sense of independence and believing in what you offer. Our mission is that you can choose the best space to start your own story, with an architecture attentive to materiality, design and the environment that surrounds you. A place where you belong.</p>
+        </div>
+    </header>
+    <div class="menuMobile_icon xl:hidden">
+        <input type="checkbox" name="menuMobile_icon" id="menuMobile_icon">
+        <label for="menuMobile_icon" onclick="menuMobile()">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </div>
+    <div class="menuMobile_box">
+        <div class="ul_box">
+            <ul class="">
+                <li><a href="../eeuu_index.html">home</a></li>
+                    <li><a href="./eeuu_proyectos.html">projects</a></li>
+                    <li><a href="./eeuu_nosotros.html">about us</a></li>
+                    <!-- <li><a href="./eeuu_recomendaciones.html">recommendations</a></li> -->
+                    <li><a href="./eeuu_conversemos.html">contact us</a></li>
+            </ul>
+            <div class="social_box">
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/libre.inmobiliaria/">
+                        insta
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/libre.inmobiliaria/">
+                        face
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/company/libreinmobiliaria/">
+                        linked
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Header About -->
+
+    <main class="nosotrosMain container mx-auto py-20 mt-10">
+        <div class="equipo_frame flex flex-col-reverse md:flex-row gap-10 items-center mb-24">
+            <div class="w-full">
+                <h3 class="micro">carlos perales</h3>
+                <h5>CEO</h5>
+                <div class="equipo_frame_separator"></div>
+                <ul>
+                    <li>+ 15 years of experience in various sectors of the Peruvian and foreign market.</li>
+                    <li>Real Estate: Desarrolladora del Pacífico (2018 – 2020).</li>
+                    <li>Mass consumption – retail: Intercorp (2015 – 2018).</li>
+                    <li>Fishing and Corporate: Grupo Breca (2005 – 2013).</li>
+                    <li>MBA Incae BS - NYU – Stern BS.</li>
+                </ul>
+                <!-- <p>Soy financiero. Me interesa aportar al país generando empleo, poniendo mi ADN a todo lo que hago.</p>
+                <br> 
+                <p>He recorrido Sudamérica, EEUU, Centroamérica y Europa. Hice mi MBA en New York. Me gustan las caminatas largas, el running, jugar básquet y tener a mis amigos de toda la vida cerca, siempre.</p> -->
+            </div>
+            <div class="w-full">
+                <img src="../styles/graphics/trabajadores/carlos_perales.jpg" alt="">
+            </div>
+        </div>
+        <div class="equipo_frame flex flex-col md:flex-row gap-10 items-center mb-24">
+            <div class="w-full">
+                <img src="../styles/graphics/trabajadores/alfonso_vigil.jpg" alt="">
+            </div>
+            <div class="w-full">
+                <h3 class="micro">alfonso vigil</h3>
+                <h5>Partner - Director</h5>
+                <div class="equipo_frame_separator"></div>
+                <ul>
+                    <li>+ 15 years of experience in diverse sectors of the Peruvian and foreign market.</li>
+                    <li>Real Estate: Edifica (2016 – 2020).</li>
+                    <li>Real Estate: Besco (2013 – 2016).</li>
+                    <li>Technology : Planok Latam (2012 – 2013).</li>
+                    <li>Mass consumption – retail: Nestlé (2011 – 2012).</li>                  
+                </ul>
+                <!-- <p>Tengo más de 15 años liderando equipos comerciales y mi principal labor en Libre es organizar de la mejor manera nuestros talentos con la finalidad de cumplir nuestros objetivos y los de nuestros clientes.</p>
+                <br> 
+                <p>Soy orgulloso papá de niñas. Me encantan todos los deportes y los practico dependiendo de la estación del año, pero mi corazón está en el fútbol. Escribo a manera de catarsis.</p> -->
+            </div>
+        </div>
+        <div class="equipo_frame flex flex-col-reverse md:flex-row gap-10 items-center mb-24">
+            <div class="w-full">
+                <h3 class="micro">Nicholas Cáceres</h3>
+                <h5>Owner Representative</h5>
+                <div class="equipo_frame_separator"></div>
+                <ul>
+                    <li>+ 8 years of experience in the USA.</li>
+                    <li>Project Designer in HDR (current).</li>
+                    <li>Job Captain in Arquitectónica (2016 – 2018).</li>
+                    <li>Licensed architect in California – USA.</li>
+                    <li>Certified in LEED AP.</li>
+                </ul>
+                <!-- <p>Soy financiero. Me interesa aportar al país generando empleo, poniendo mi ADN a todo lo que hago.</p>
+                <br> 
+                <p>He recorrido Sudamérica, EEUU, Centroamérica y Europa. Hice mi MBA en New York. Me gustan las caminatas largas, el running, jugar básquet y tener a mis amigos de toda la vida cerca, siempre.</p> -->
+            </div>
+            <div class="w-full">
+                <img src="../styles/graphics/trabajadores/nicholas_caceres.jpeg" alt="">
+            </div>
+        </div>
+        <div class="equipo_frame flex flex-col md:flex-row gap-10 items-center mb-24">
+            <div class="w-full">
+                <img src="../styles/graphics/trabajadores/wilma.jpg" alt="">
+            </div>
+            <div class="w-full">
+                <h3 class="micro">Wilma Béjar</h3>
+                <h5>Broker & Owner de La Rosa Realty Internacional</h5>
+                <div class="equipo_frame_separator"></div>
+                <ul>
+                    <li>+ 10 years of experience in USA and Peru.</li>
+                    <li>Purchase and sale of properties for national and international clients.</li>
+                    <li>Broker licensed in DBPR, CIPS, CSP, PSA, SFR and others.</li>
+                </ul>
+                <!-- <p>Tengo más de 15 años liderando equipos comerciales y mi principal labor en Libre es organizar de la mejor manera nuestros talentos con la finalidad de cumplir nuestros objetivos y los de nuestros clientes.</p>
+                <br> 
+                <p>Soy orgulloso papá de niñas. Me encantan todos los deportes y los practico dependiendo de la estación del año, pero mi corazón está en el fútbol. Escribo a manera de catarsis.</p> -->
+            </div>
+        </div>
+        <div class="socios_extra_eeuu flex flex-col lg:flex-row justify-center items-center w-full gap-10 lg:gap-24">
+            <div class="socio flex flex-row items-center gap-2 sm:gap-5">
+                <div>
+                    <img src="../styles/graphics/trabajadores/mauricio_corso.jpg" alt="">
+                </div>
+                <div>
+                    <p>Mauricio Corso</p>
+                    <span>Partner - Director</span>
+                </div>
+            </div>
+            <div class="socio flex flex-row items-center gap-2 sm:gap-5">
+                <div>
+                    <img src="../styles/graphics/trabajadores/jose_luis.jpg" alt="">
+                </div>
+                <div>
+                    <p>José Luis Zimig</p>
+                    <span>Partner - Director</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Separator -->
+    <div class="separator container mx-auto my-5"></div>
+    <!-- end Separatos -->
+
+    <!-- Formulario -->
+    <section class="formulario container py-20 flex flex-col items-center lg:items-start lg:flex-row gap-10 lg:gap-20 mx-auto">
+        <div class="formulario_logo">
+            <img src="../styles/graphics/logo_libre_negro.png" alt="">
+        </div>
+        <div class="formulario_content w-full lg:w-6/12">
+            <h3>Let's talk</h3>
+            <form action="#" class="flex flex-col gap-5">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="text" name="cel" id="cel" placeholder="Cellphone">
+                <textarea name="message" id="message" placeholder="Question"></textarea>
+                <button type="submit" class="flex flex-row gap-2 items-center">
+                    <div>
+                        <span>Send</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </button>
+            </form>
+        </div>
+        <div class="formulario_data">
+            <ul class="text-center lg:text-left">
+                <li><a class="subrayado_negro" href="https://www.instagram.com/libre.inmobiliaria/">Instagram</a></li>
+                <li><a class="subrayado_negro" href="https://www.facebook.com/libre.inmobiliaria/">Facebook</a></li>
+                <li><a class="subrayado_negro" href="https://www.facebook.com/libre.inmobiliaria/">Linkedin</a></li>
+                <li class="subrayado_negro">conversemos@libreinmobiliaria.com</li>
+                <li>1420 Celebration Blvd Suite 247, <br> Celebration, FL 34747</li>
+            </ul>
+        </div>
+    </section>
+    <!-- end Formulario -->
+
+    <!-- Footer -->
+    <footer class="footer flex justify-center py-3 px-3 text-center">
+        <div>
+            <p>&copy; 2022 Libre Real State, All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Whatsaap Icon -->
+    <div class="whatsaap">
+        <a target="_blank" href="https://wa.me/51946504902">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <!-- end Whatsaap Icon -->
+
+
+    <!-- JS -->
+    <script src="../js/language_peru.js"></script>
+    <script src="../js/menuMobile.js"></script>
+</body>
+</html>

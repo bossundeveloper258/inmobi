@@ -1,0 +1,366 @@
+.header_proyecto{
+    width: 100%;
+    height: auto;
+    padding: 150px 0 50px 0;
+    color: $blanco;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($negro, 0.5);
+    }
+
+    &_mmxx_barranco{
+        background-image: url('./proyectos/mmxx_barranco/header_mmxx_barranco.jpg');
+
+        .deca{
+            font-size: 120px;
+            line-height: 120px;
+        }
+    }
+
+    &_28_julio{
+        background-image: url('./proyectos/28_julio/fachada.jpg');
+
+        .font1365{
+            font-family: 'TT Nooks Script Bold';
+        }
+    }
+
+    &_auburndale{
+        background-image: url('./proyectos/auburndale/principal.png');
+    }
+
+    &_content{
+        z-index: 10;
+
+        h1{
+            text-transform: uppercase;
+            font-size: 80px;
+            letter-spacing: 8px;
+            line-height: 80px;
+        }
+    }
+}
+
+.presentacion{
+
+    &_izquierda{
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+          
+        @-webkit-keyframes fade {
+            from{
+                opacity: .4;
+            } 
+            to{
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fade {
+            from{
+                opacity: .4;
+            } 
+            to{
+                opacity: 1;
+            }
+        }
+    }
+
+    &_derecha{
+
+        p{
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        a{
+            font-size: 18px;
+            color: $blanco;
+            background-color: $negro;
+            padding: 15px 30px;
+            border-radius: 30px;
+            border: 2px solid $negro;
+            transition: all .3s;
+
+            &:hover{
+                background-color: $blanco;
+                color: $negro;
+                box-shadow: 0 10px 10px rgba($negro, 0.3);
+            }
+        }
+    }
+}
+
+.calidadVida{
+    color: $blanco;
+    font-size: 35px;
+    background-image: url('./proyectos/mmxx_barranco/calidadVida_background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    &_28_julio{
+        background-image: url('./proyectos/28_julio/fachada1.jpg');
+    }
+
+    &_auburndale{
+        background-image: url('./proyectos/auburndale/tres.png');
+    }
+
+    &_box{
+        position: relative;
+        z-index: 10;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($negro, 0.7);
+    }
+}
+
+.departamentos{
+
+    &_text{
+
+        h3{
+            font-size: 60px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 40px;
+
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 20%;
+                height: 3px;
+                background-color: $negro;
+            }
+        }
+    }
+
+    &_filtro{
+
+        &_busqueda{
+
+            button{
+                background-color: $negro;
+                color: $blanco;
+                padding: 8px 25px;
+                font-size: 16px;
+                border-radius: 30px;
+                transition: all .3s;
+                border: 2px solid $negro;
+
+                &:hover{
+                    background-color: $blanco;
+                    color: $negro;
+                }
+            }
+        }
+    }
+
+    &_container{
+
+        &_box{
+            height: 300px;
+            width: 330px !important;
+            overflow: hidden;
+            position: relative;
+
+            &IMG{
+                height: 240px;
+                overflow: hidden;
+                position: relative;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($negro, 0.4);
+                    z-index: 0;
+                }
+
+                &_tipo{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 10;
+
+                    p{
+                        text-transform: uppercase;
+                        color: $blanco;
+                        font-size: 50px;
+                        letter-spacing: 5px;
+                    }
+                }
+
+                &_depa{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: $negro;
+                    z-index: 10;
+
+                    span{
+                        color: $blanco;
+                        font-size: 14px;
+                        padding: 10px 20px;
+                        text-transform: uppercase;
+                    }
+                }
+
+                img{
+                    height: 100%;
+                }
+            }
+
+            &Info{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 60px;
+                width: 100%;
+                background-color: $negro;
+                color: $blanco;
+
+                .metraje{
+                    font-weight: bold;
+                }
+
+                .moreButton{
+                    
+                    button{
+                        border: 2px solid $blanco;
+                        font-size: 15px;
+                        padding: 5px 15px;
+                        border-radius: 30px;
+                        transition: all .3s;
+
+                        &:hover{
+                            background-color: $blanco;
+                            color: $negro;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &_video{
+
+        iframe{
+            width: 650px;
+            height: 365px;
+        }
+    }
+}
+
+@media screen and (max-width:1536px) {
+    .departamentos_video{
+
+        iframe{
+            width: 500px;
+            height: 281px;
+        }
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .departamentos_video{
+
+        iframe{
+            width: 350px;
+            height: 197px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .departamentos_text h3{
+        font-size: 35px;
+    }
+
+    .departamentos_video{
+
+        iframe{
+            width: 650px;
+            height: 365px;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .presentacion_derecha p{
+        font-size: 20px;
+    }
+
+    .calidadVida_box p{
+        font-size: 20px;
+    }
+
+    .header_proyecto_content h1{
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 1.5px;
+    }
+
+    .departamentos_text h3{
+        font-size: 25px;
+    }
+
+    .departamentos_video{
+
+        iframe{
+            width: 500px;
+            height: 281px;
+        }
+    }
+}
+
+@media screen and (max-width:510px) {
+    .header_proyecto_content h1{
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 1.5px;
+    }
+
+    .departamentos_text h3{
+        font-size: 20px;
+    }
+
+    .departamentos_video{
+
+        iframe{
+            width: 320px;
+            height: 180px;
+        }
+    }
+}

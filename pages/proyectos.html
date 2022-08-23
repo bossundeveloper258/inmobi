@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libre &reg; Inmobiliaria</title>
+    <link rel="shortcut icon" href="../styles/graphics/favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Home -->
+    <header class="header_home flex justify-center items-center">
+        <div class="nav_logoMobile xl:hidden">
+            <div id="peru_box_mobile">
+                <label for="peru_mobile" onclick="peruFunction()">
+                        <img src="../styles/graphics/logo_libre_peru_select.png" alt="">
+                </label>
+                <input type="checkbox" name="peru_mobile" id="peru_mobile">
+            </div>
+            <div id="eeuu_box_mobile">
+                <a href="./eeuu_proyectos.html">
+                    <img src="../styles/graphics/logo_libre_eeuu.png" alt="">
+                </a>
+            </div>
+        </div>
+        <nav class="nav flex flex-row justify-between items-center container hidden xl:flex">
+            <div class="nav_logo">
+                <div id="peru_box">
+                    <label for="peru" onclick="peruFunction()">
+                            <img src="../styles/graphics/logo_libre_peru_select.png" alt="">
+                    </label>
+                    <input type="checkbox" name="peru" id="peru">
+                </div>
+                <div id="eeuu_box">
+                    <a href="./eeuu_proyectos.html">
+                        <img src="../styles/graphics/logo_libre_eeuu.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="nav_ul">
+                <ul class="flex flex-row gap-16">
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="./proyectos.html">proyectos</a></li>
+                    <li><a href="./nosotros.html">nosotros</a></li>
+                    <li><a href="./recomendaciones.html">recomendaciones</a></li>
+                    <li><a href="./conversemos.html">conversemos</a></li>
+                </ul>
+            </div>
+            <div class="nav_redes flex flex-row gap-5 items-center">
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/libre.inmobiliaria/">
+                        insta
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/libre.inmobiliaria/">
+                        face
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/company/libreinmobiliaria/">
+                        linked
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="container header_home_content text-center header_proyectos_content">
+            <h1 class="nano">conoce nuestros <br> <span class="yotta yotta_header">proyectos</span></h1>
+        </div>
+    </header>
+    <div class="menuMobile_icon xl:hidden">
+        <input type="checkbox" name="menuMobile_icon" id="menuMobile_icon">
+        <label for="menuMobile_icon" onclick="menuMobile()">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </div>
+    <div class="menuMobile_box">
+        <div class="ul_box">
+            <ul class="">
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="../pages/proyectos.html">proyectos</a></li>
+                <li><a href="../pages/nosotros.html">nosotros</a></li>
+                <li><a href="../pages/recomendaciones.html">recomendaciones</a></li>
+                <li><a href="../pages/conversemos.html">conversemos</a></li>
+            </ul>
+            <div class="social_box">
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/libre.inmobiliaria/">
+                        insta
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/libre.inmobiliaria/">
+                        face
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/company/libreinmobiliaria/">
+                        linked
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Header Home -->
+
+    <!-- Filtro Proyectos -->
+    <!-- <section class="filtro_proyectos flex flex-row gap-5 items-center mt-20 container mx-auto">
+        <div>
+            <p>Escoge el país de tu preferencia:</p>
+        </div>
+        <div class="-mb-1">
+            <button>
+                <div class="filtro_proyectos_pais flex flex-row items-center gap-1">
+                    <div>
+                        <img src="../styles/graphics/bandera_peru.png" alt="">
+                    </div>
+                    <div>
+                        <h1>perú</h1>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div class="-mb-1">
+            <button>
+                <div class="filtro_proyectos_pais flex flex-row items-center gap-1">
+                    <div>
+                        <img src="../styles/graphics/bandera_eeuu.png" alt="">
+                    </div>
+                    <div>
+                        <h1>eeuu</h1>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </section> -->
+    <!-- end Filtro Proyectos -->
+
+    <!-- Proyectos Home -->
+    <section class="proyectos_home container mx-auto py-20">
+        <div class="flex flex-col lg:flex-row gap-10">            
+            <div class="w-full">
+                <a href="./proyectos/28julio.html">
+                    <div class="proyectos_home_frame w-full flex flex-row">
+                        <div class="proyectos_home_frame_left proyectos_home_frame_left2 w-full">
+                            <!-- <img src="./styles/graphics/lima_mmxx.jpg" alt=""> -->
+                        </div>
+                        <div class="proyectos_home_frame_right w-3/5 p-10 box-border flex flex-col justify-center">
+                            <p>28</p>
+                            <h1 class="mega">de julio</h1>
+                            <h2>Miraflores</h3>
+                            <h3>28 de Julio 1365</h3>
+                            <h4>2022</h4>
+                        </div>
+                        <div class="proyectos_home_frame_pais">
+                            <p>lima - perú</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="./proyectos/mmxx_barranco.html">
+                    <div class="proyectos_home_frame w-full flex flex-row">
+                        <div class="proyectos_home_frame_left proyectos_home_frame_left1 w-full">
+                        </div>
+                        <div class="proyectos_home_frame_right w-3/5 p-10 box-border flex flex-col justify-center">
+                            <h1 class="mega">mmxx</h1>
+                            <h2>Barranco</h3>
+                            <h3>Calle Pérez Roca 203</h3>
+                            <h4>2021</h4>
+                        </div>
+                        <div class="proyectos_home_frame_pais">
+                            <p>lima - perú</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end Proyectos Home -->
+
+    <!-- Separator -->
+    <div class="separator container mx-auto"></div>
+    <!-- end Separatos -->
+
+    <!-- Formulario -->
+    <section class="formulario container py-20 flex flex-col items-center lg:items-start lg:flex-row gap-10 lg:gap-20 mx-auto">
+        <div class="formulario_logo inline-block">
+            <img src="../styles/graphics/logo_libre_negro.png" alt="">
+        </div>
+        <div class="formulario_content w-full lg:w-6/12">
+            <h3>Conversemos</h3>
+            <form action="https://formsubmit.co/conversemos@libreinmobiliaria.com" method="post" class="flex flex-col gap-5">
+		<input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="name" id="name" placeholder="Nombre y Apellido">
+                <input type="text" name="cel" id="cel" placeholder="Celular">
+                <textarea name="message" id="message" placeholder="Consulta"></textarea>
+		<input type="hidden" name="_next" value="http://34.133.111.3/">
+		<input type="hidden" name="_captcha" value="false">               
+		<button type="submit" class="flex flex-row gap-2 items-center">
+                    <div>
+                        <span>Enviar</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </button>
+            </form>
+        </div>
+        <div class="formulario_data">
+            <ul class="text-center lg:text-left">
+                <li><a class="subrayado_negro" href="https://www.instagram.com/libre.inmobiliaria/">Instagram</a></li>
+                <li><a class="subrayado_negro" href="https://www.facebook.com/libre.inmobiliaria/">Facebook</a></li>
+                <li><a class="subrayado_negro" href="https://www.facebook.com/libre.inmobiliaria/">Linkedin</a></li>
+                <li class="subrayado_negro">conversemos@libreinmobiliaria.com</li>
+                <li>Jr. Pérez Roca 203, Barranco <br> Lima - Perú</li>
+            </ul>
+        </div>
+    </section>
+    <!-- end Formulario -->
+
+    <!-- Footer -->
+    <footer class="footer flex justify-center py-3 px-3 text-center">
+        <div>
+            <p>&copy; 2022 Libre Inmobiliaria, Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Whatsaap Icon -->
+    <div class="whatsaap">
+        <a target="_blank" href="https://wa.me/51946504902">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <!-- end Whatsaap Icon -->
+
+    <!-- JS -->
+    <script src="../js/language_peru.js"></script>
+    <script src="../js/menuMobile.js"></script>
+</body>
+</html>

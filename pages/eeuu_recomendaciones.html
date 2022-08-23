@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libre &reg; Inmobiliaria</title>
+    <link rel="shortcut icon" href="../styles/graphics/favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Recomendaciones -->
+    <header class="header_recomendaciones flex justify-center items-center">
+        <div class="nav_logoMobile xl:hidden">
+            <div id="peru_box_mobile">
+                <label for="peru_mobile" onclick="peruFunction()">
+                    <img src="../styles/graphics/logo_libre_eeuu_select.png" alt="">
+                </label>
+                <input type="checkbox" name="peru_mobile" id="peru_mobile">
+            </div>
+            <div id="eeuu_box_mobile">
+                <a href="./recomendaciones.html">
+                    <img src="../styles/graphics/logo_libre_peru.png" alt="">
+                </a>
+            </div>
+        </div>
+        <nav class="nav flex flex-row justify-between items-center container hidden xl:flex">
+            <div class="nav_logo">
+                <div id="peru_box">
+                    <label for="peru" onclick="peruFunction()">
+                            <img src="../styles/graphics/logo_libre_eeuu_select.png" alt="">
+                    </label>
+                    <input type="checkbox" name="peru" id="peru">
+                </div>
+                <div id="eeuu_box">
+                    <a href="./recomendaciones.html">
+                        <img src="../styles/graphics/logo_libre_peru.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="nav_ul">
+                <ul class="flex flex-row gap-16">
+                    <li><a href="../eeuu_index.html">home</a></li>
+                    <li><a href="./eeuu_proyectos.html">projects</a></li>
+                    <li><a href="./eeuu_nosotros.html">about us</a></li>
+                    <!-- <li><a href="./eeuu_recomendaciones.html">recommendations</a></li> -->
+                    <li><a href="./eeuu_conversemos.html">contact us</a></li>
+                </ul>
+            </div>
+            <div class="nav_redes flex flex-row gap-5 items-center">
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/libre.inmobiliaria/">
+                        insta
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/libre.inmobiliaria/">
+                        face
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/libre.inmobiliaria/">
+                        linked
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="header_recomendaciones_content container flex flex-col items-center">
+            <div class="-ml-5">
+                <span>our favorites</span>
+            </div>
+            <div class="mt-8 text-center">
+                <h1 class="mega">libre<br>recommends</h1>
+            </div>
+        </div>
+    </header>
+    <div class="menuMobile_icon xl:hidden">
+        <input type="checkbox" name="menuMobile_icon" id="menuMobile_icon">
+        <label for="menuMobile_icon" onclick="menuMobile()">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </div>
+    <div class="menuMobile_box">
+        <div class="ul_box">
+            <ul class="">
+                <li><a href="../eeuu_index.html">home</a></li>
+                    <li><a href="./eeuu_proyectos.html">projects</a></li>
+                    <li><a href="./eeuu_nosotros.html">about us</a></li>
+                    <!-- <li><a href="./eeuu_recomendaciones.html">recommendations</a></li> -->
+                    <li><a href="./eeuu_conversemos.html">contact us</a></li>
+            </ul>
+            <div class="social_box">
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/libre.inmobiliaria/">
+                        insta
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/libre.inmobiliaria/">
+                        face
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/company/libreinmobiliaria/">
+                        linked
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Header Recomendaciones -->
+
+    <main class="recomendacionesMain py-28">
+        <div class="container mx-auto flex flex-row flex-wrap justify-center gap-24">
+            <div class="flex flex-col gap-24 items-center">
+                <div class="recomendacionBox">
+                    <div class="recomendacionBox_img">
+                        <img src="../styles/graphics/recomendacion3.png" alt="">
+                        <div class="recomendacionBox_img_fecha">
+                            <span>september - 2021</span>
+                        </div>
+                    </div>
+                    <div class="recomendacionBox_title">
+                        <h3 class="deca">modern bakeries</h3>
+                    </div>
+                    <div class="recomendacionBox_extra">
+                        <p>@lapanatteriabarranco</p>
+                        <p>Av.Grau 369, Barranco</p>
+                    </div>
+                </div>
+                <div class="recomendacionBox">
+                    <div class="recomendacionBox_img">
+                        <img src="../styles/graphics/recomendacion4.png" alt="">
+                        <div class="recomendacionBox_img_fecha">
+                            <span>october - 2021</span>
+                        </div>
+                    </div>
+                    <div class="recomendacionBox_title">
+                        <h3 class="deca">modern bakeries</h3>
+                    </div>
+                    <div class="recomendacionBox_extra">
+                        <p>@pansalaire</p>
+                        <p>Av. Grau 320, Barranco</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-24 items-center">
+                <div class="recomendacionBox">
+                    <div class="recomendacionBox_img">
+                        <img src="../styles/graphics/recomendacion1.jpg" alt="">
+                        <div class="recomendacionBox_img_fecha">
+                            <span>november - 2021</span>
+                        </div>
+                    </div>
+                    <div class="recomendacionBox_title">
+                        <h3 class="deca">urban art</h3>
+                    </div>
+                    <div class="recomendacionBox_extra">
+                        <p>@Aquije_</p>
+                        <p>Peso pluma beizer/Graphic Mixing Machine</p>
+                    </div>
+                </div>
+                <div class="recomendacionBox">
+                    <div class="recomendacionBox_img">
+                        <img src="../styles/graphics/recomendacion2.png" alt="">
+                        <div class="recomendacionBox_img_fecha">
+                            <span>december - 2021</span>
+                        </div>
+                    </div>
+                    <div class="recomendacionBox_title">
+                        <h3 class="deca">iconic chifa</h3>
+                    </div>
+                    <div class="recomendacionBox_extra">
+                        <p>@chifachungyion_oficial</p>
+                        <p>Jr. Unión 126, Barranco</p>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="flex flex-col gap-24 items-center">
+                <div class="recomendacionBox">
+                    <div class="recomendacionBox_img">
+                        <img src="../styles/graphics/recomendacion5.jpg" alt="">
+                        <div class="recomendacionBox_img_fecha">
+                            <span>january - 2022</span>
+                        </div>
+                    </div>
+                    <div class="recomendacionBox_title">
+                        <h3 class="deca">urban art</h3>
+                    </div>
+                    <div class="recomendacionBox_extra">
+                        <p>@museo_maclima</p>
+                        <p>Av. Grau 1511, Barranco</p>
+                    </div>
+                </div>
+                <div class="recomendacionBox">
+                    <div class="recomendacionBox_img">
+                        <img src="../styles/graphics/recomendacion6.jpg" alt="">
+                        <div class="recomendacionBox_img_fecha">
+                            <span>february - 2022</span>
+                        </div>
+                    </div>
+                    <div class="recomendacionBox_title">
+                        <h3 class="deca">urban art</h3>
+                    </div>
+                    <div class="recomendacionBox_extra">
+                        <p>@jade1rivera</p>
+                        <p>Artist on the streets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Formulario -->
+    <section class="formulario container py-20 flex flex-col items-center lg:items-start lg:flex-row gap-10 lg:gap-20 mx-auto">
+        <div class="formulario_logo">
+            <img src="../styles/graphics/logo_libre_negro.png" alt="">
+        </div>
+        <div class="formulario_content w-full lg:w-6/12">
+            <h3>Let's talk</h3>
+	    <form action="https://formsubmit.co/conversemos@libreinmobiliaria.com" method="post" class="flex flex-col gap-5">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="text" name="cel" id="cel" placeholder="Cellphone">
+                <textarea name="message" id="message" placeholder="Question"></textarea>
+		<input type="hidden" name="_next" value="http://34.133.111.3/">
+		<input type="hidden" name="_captcha" value="false">
+                <button type="submit" class="flex flex-row gap-2 items-center">
+                    <div>
+                        <span>Send</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </button>
+            </form>
+        </div>
+        <div class="formulario_data">
+            <ul class="text-center lg:text-left">
+                <li><a class="subrayado_negro" href="https://www.instagram.com/libre.inmobiliaria/">Instagram</a></li>
+                <li><a class="subrayado_negro" href="https://www.facebook.com/libre.inmobiliaria/">Facebook</a></li>
+                <li><a class="subrayado_negro" href="https://www.facebook.com/libre.inmobiliaria/">Linkedin</a></li>
+                <li class="subrayado_negro">conversemos@libreinmobiliaria.com</li>
+                <li>Jr. Pérez Roca 203, Barranco <br> Lima - Perú</li>
+            </ul>
+        </div>
+    </section>
+    <!-- end Formulario -->
+
+    <!-- Footer -->
+    <footer class="footer flex justify-center py-3 px-3 text-center">
+        <div>
+            <p>&copy; 2022 Libre Real State, All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Whatsaap Icon -->
+    <div class="whatsaap">
+        <a target="_blank" href="https://wa.me/51946504902">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <!-- end Whatsaap Icon -->
+
+
+    <!-- JS -->
+    <script src="../js/language_peru.js"></script>
+    <script src="../js/menuMobile.js"></script>
+</body>
+</html>

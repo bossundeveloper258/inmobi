@@ -1,0 +1,74 @@
+.nav{
+    position: absolute;
+    top: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    z-index: 20;
+
+    &_logo{
+        position: relative;
+        width: 200px;
+
+        &Mobile{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 150px;
+            z-index: 100;
+
+            input{
+                display: none;
+            }
+        }
+
+        input{
+            display: none;
+        }
+
+        /* label::after{
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: $blanco;
+            border-radius: 5px;
+            transition: all .3s;
+        }
+        
+        &:hover label::after{
+            width: 100px;
+        } */
+    }
+    
+
+    &_ul{
+
+        a{
+            transition: all .3s;
+        }
+
+        a:hover{
+            color: $naranja_marron;
+        }
+    }
+
+    &_redes{
+
+        a{
+            border: 2px solid $blanco;
+            border-radius: 20px;
+            padding:  10px 25px;
+            font-size: 10px;
+            transition: all .4s;
+
+            &:hover{
+                background-color: $blanco;
+                color: $negro;
+            }
+        }
+    }
+}
